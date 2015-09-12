@@ -39,9 +39,8 @@ platform :ios do
 
   lane :tests do
 
-    crashlytics(
-      notifications: 'YES',
-      groups: 'corpo-na-medida'
+    ensure_git_branch(
+      branch: 'test'
     )
 
   end
