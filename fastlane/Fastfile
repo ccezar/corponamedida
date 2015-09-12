@@ -1,0 +1,55 @@
+default_platform :ios
+
+platform :ios do
+
+  before_all do
+      #cocoapods
+  end
+
+  lane :homol do
+    # build / arquive
+    increment_build_number
+    sigh(
+      adhoc: false,
+      force: true
+    )
+    gym
+
+    # deploy
+    testflight
+  end
+
+  lane :desenv do
+    # build / arquive
+    increment_build_number
+
+    sigh(
+      adhoc: true,
+      force: true
+    )
+
+    ENV["PROFILE_UDID"] = lane_context[SharedValues::SIGH_UDID]
+    gym
+
+    crashlytics(
+      notifications: 'YES',
+      groups: 'corpo-na-medida'
+    )
+  end
+
+  lane :tests do
+
+    crashlytics(
+      notifications: 'YES',
+      groups: 'corpo-na-medida'
+    )
+
+  end
+
+  after_all do |lane|
+
+  end
+
+  error do |lane, exception|
+  end
+end

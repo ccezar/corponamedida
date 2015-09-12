@@ -10,11 +10,11 @@
 		FC6DBFD41B9F4343002B82EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DBFD31B9F4343002B82EE /* AppDelegate.swift */; };
 		FC6DBFD61B9F4343002B82EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DBFD51B9F4343002B82EE /* ViewController.swift */; };
 		FC6DBFD91B9F4343002B82EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6DBFD71B9F4343002B82EE /* Main.storyboard */; };
-		FC6DBFDB1B9F4343002B82EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6DBFDA1B9F4343002B82EE /* Images.xcassets */; };
 		FC6DBFDE1B9F4343002B82EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6DBFDC1B9F4343002B82EE /* LaunchScreen.xib */; };
 		FC6DBFEA1B9F4343002B82EE /* AppGeralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DBFE91B9F4343002B82EE /* AppGeralTests.swift */; };
 		FC6DBFF71B9F4760002B82EE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6DBFF51B9F4760002B82EE /* Fabric.framework */; };
 		FC6DBFF81B9F4760002B82EE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6DBFF61B9F4760002B82EE /* Crashlytics.framework */; };
+		FCB2F5801BA05F240033FBA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB2F57F1BA05F240033FBA2 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +33,13 @@
 		FC6DBFD31B9F4343002B82EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC6DBFD51B9F4343002B82EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC6DBFD81B9F4343002B82EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC6DBFDA1B9F4343002B82EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC6DBFDD1B9F4343002B82EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC6DBFE31B9F4343002B82EE /* AppGeralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppGeralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6DBFE81B9F4343002B82EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6DBFE91B9F4343002B82EE /* AppGeralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGeralTests.swift; sourceTree = "<group>"; };
 		FC6DBFF51B9F4760002B82EE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FC6DBFF61B9F4760002B82EE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FCB2F57F1BA05F240033FBA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				FC6DBFD31B9F4343002B82EE /* AppDelegate.swift */,
 				FC6DBFD51B9F4343002B82EE /* ViewController.swift */,
 				FC6DBFD71B9F4343002B82EE /* Main.storyboard */,
-				FC6DBFDA1B9F4343002B82EE /* Images.xcassets */,
+				FCB2F57F1BA05F240033FBA2 /* Images.xcassets */,
 				FC6DBFDC1B9F4343002B82EE /* LaunchScreen.xib */,
 				FC6DBFD11B9F4343002B82EE /* Supporting Files */,
 			);
@@ -170,6 +170,7 @@
 				TargetAttributes = {
 					FC6DBFCD1B9F4343002B82EE = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = L9GVY7R4LC;
 					};
 					FC6DBFE21B9F4343002B82EE = {
 						CreatedOnToolsVersion = 6.4;
@@ -203,7 +204,7 @@
 			files = (
 				FC6DBFD91B9F4343002B82EE /* Main.storyboard in Resources */,
 				FC6DBFDE1B9F4343002B82EE /* LaunchScreen.xib in Resources */,
-				FC6DBFDB1B9F4343002B82EE /* Images.xcassets in Resources */,
+				FCB2F5801BA05F240033FBA2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +369,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 20;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -375,6 +378,9 @@
 				INFOPLIST_FILE = AppGeral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(PROFILE_UDID)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -382,6 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 20;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -389,6 +397,9 @@
 				INFOPLIST_FILE = AppGeral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(PROFILE_UDID)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
