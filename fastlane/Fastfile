@@ -61,7 +61,7 @@ platform :ios do
     )
 
     clean_build_artifacts
-    commit_version_bump_new(
+    commit_version_bump(
       message: "Deploying build #{build_number}.",
       force: true
     )
