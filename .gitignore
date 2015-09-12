@@ -1,0 +1,13 @@
+.DS_Store
+AppGeral.xcodeproj/project.xcworkspace/xcuserdata/
+AppGeral.xcodeproj/xcuserdata/
+AppGeral.xcworkspace/xcshareddata/
+AppGeral.xcworkspace/xcuserdata/
+AppGeral/.DS_Store
+AppGeral/Images.xcassets/AppIcon.appiconset/.DS_Store
+Pods/Pods.xcodeproj/xcuserdata/
+fastlane/.DS_Store
+fastlane/actions/
+fastlane/report.xml
+releases/
+fastlane/.env
