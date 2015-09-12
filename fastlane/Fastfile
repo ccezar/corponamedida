@@ -56,7 +56,7 @@ platform :ios do
     )
 
     clean_build_artifacts
-    commit_version_bump message: "Deploying version #{build_number} (build_number)."
+    commit_version_bump_new message: "Deploying version #{build_number} (build_number)."
     push_to_git_remote
   end
 
