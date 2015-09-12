@@ -3,25 +3,43 @@ default_platform :ios
 platform :ios do
 
   before_all do
-      #cocoapods
+    ensure_git_status_clean
+    cocoapods
   end
 
   lane :homol do
+    ensure_git_branch(
+      branch: 'homol'
+    )
+
     # build / arquive
-    increment_build_number
+    build_number = Time.new.strftime("%Y.%m.%d")
+    increment_build_number build_number: build_number
+
     sigh(
       adhoc: false,
       force: true
     )
+
+    ENV["PROFILE_UDID"] = lane_context[SharedValues::SIGH_UDID]
     gym
 
     # deploy
     testflight
+
+    clean_build_artifacts
+    commit_version_bump
+    push_to_git_remote
   end
 
   lane :desenv do
+    ensure_git_branch(
+      branch: 'desenv'
+    )
+
     # build / arquive
-    increment_build_number
+    build_number = Time.new.strftime("%Y.%m.%d")
+    increment_build_number build_number: build_number
 
     sigh(
       adhoc: true,
@@ -31,10 +49,15 @@ platform :ios do
     ENV["PROFILE_UDID"] = lane_context[SharedValues::SIGH_UDID]
     gym
 
+    # deploy
     crashlytics(
       notifications: 'YES',
       groups: 'corpo-na-medida'
     )
+
+    clean_build_artifacts
+    commit_version_bump
+    push_to_git_remote
   end
 
   lane :tests do
