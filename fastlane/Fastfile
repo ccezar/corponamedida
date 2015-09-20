@@ -74,11 +74,11 @@ platform :ios do
 
   lane :tests do
 
-    #build_number = Time.new.strftime("%y%m%d%H%M%S")
-    #increment_build_number build_number: build_number
+    build_number = Time.new.strftime("%y%m%d%H%M%S")
+    increment_build_number build_number: build_number
     #clean_build_artifacts
     #commit_version_bump(
-  #    message: "Deploying version #{build_number} (build_number).",
+    #  message: "Deploying version #{build_number} (build_number).",
     #  force: true
     #)
 
