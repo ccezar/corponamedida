@@ -17,6 +17,7 @@ platform :ios do
     build_number = Time.new.strftime("%y%m%d%H%M%S")
     increment_build_number build_number: build_number
 
+
     sigh(
       adhoc: false,
       force: true
