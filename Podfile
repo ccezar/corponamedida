@@ -3,6 +3,9 @@
 
 target 'AppGeral' do
 
+    pod 'Parse'
+    pod 'ParseUI'
+
 end
 
 target 'AppGeralTests' do

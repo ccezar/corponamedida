@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "CNM_AppGeral": {
+      "applicationId": "vKnBLQQWwz0kWFU49ncSzaGwK4KfFt5mugwu2LGD"
+    },
+    "_default": {
+      "link": "CNM_AppGeral"
+    }
+  }
+}
